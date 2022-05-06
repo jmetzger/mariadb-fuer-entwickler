@@ -24,6 +24,8 @@ CREATE ALGORITHM=MERGE VIEW actor_b AS SELECT * FROM actor WHERE last_name LIKE 
 ## Neue Felder, sind automatisch im View: 
 
 ```
+
+
 alter table actor add column city varchar(45) default 'Hildesheim';
 # city is not nicht im view
 select * from actor_b; 
